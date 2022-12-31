@@ -1,1 +1,7 @@
-klasnjkhajkn
+Sooner or later we all run into this situation with Git: We committed a change that should not be committed and we only found that out after we hit commit in out IDE. If we did not yet push this change to our centralised repository, we can use this command to undo our mistake:
+
+MS DOS
+git reset --soft HEAD^
+This command tells Git to remove the last commit from the current branch while --soft keeps our changes around. We could run git commit once more and we would get the exact same commit as the one we got rid of.
+
+Since we do not want to recreate our mistake, we can now unstage or stash the file we do not want to commit and create a new (and correct) commit.
