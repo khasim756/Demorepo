@@ -1,0 +1,5 @@
+Input : str = "abba" 
+Output: Yes
+
+Input : str = "geeks"
+Output: No  
